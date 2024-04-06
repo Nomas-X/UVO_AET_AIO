@@ -1,0 +1,13 @@
+name = "Unit Voice-Overs AET AiO";
+dir = "@uvo";
+author = "Simplex Team";
+description = "Unit Voice-Overs AET AiO";
+overview = "Unit Voice-Overs AET AiO";
+picture = "assets\uvo.paa";
+overviewPicture = "assets\uvo.paa";
+logo = "assets\uvo.paa";
+logoOver = "assets\uvo.paa";
+actionName = "Website";
+action = "https://github.com/SceptreOfficial/Unit-Voice-Overs";
+tooltip = "Unit Voice-Overs AET AiO";
+tooltipOwned = "Unit Voice-Overs AET AiO Owned";

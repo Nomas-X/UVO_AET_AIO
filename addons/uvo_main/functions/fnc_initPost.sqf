@@ -3,6 +3,7 @@
 params ["_unit"];
 
 if (isNull _unit || !local _unit) exitWith {};
+if (!_unit isKindOf "Man") exitWith {};
 
 
 // condition - Needs to return bool
@@ -15,7 +16,6 @@ _statement = {
 	if (!AET_isDone_CBA_Settings) then {
 		waitUntil { AET_isDone_CBA_Settings; };
 	};
-
 	private _voice = switch (side group _unit) do {
 		case west : {AET_UVO_BLUFOR_LANGUAGE};
 		case east : {AET_UVO_OPFOR_LANGUAGE};

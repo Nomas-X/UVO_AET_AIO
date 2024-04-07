@@ -3,7 +3,7 @@
 params ["_unit"];
 
 if (isNull _unit || !local _unit) exitWith {};
-if (!_unit isKindOf "Man") exitWith {};
+if (getText (configOf _unit >> "simulation") == "UAVPilot") exitWith {};
 
 
 // condition - Needs to return bool

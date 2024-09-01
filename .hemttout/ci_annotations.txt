@@ -1,0 +1,9 @@
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_amer/config.cpp
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_arab/config.cpp
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_asia/config.cpp
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_brit/config.cpp
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_fren/config.cpp
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_germ/config.cpp
+3||3||10||16||error||property's value could not be parsed.||invalid value||/addons/uvo_jp/config.cpp
+1||1||11||54||error||include not found||not found||/addons/uvo_main/script_macros.hpp
+3||3||10||18||error||property's value could not be parsed.||invalid value||/addons/uvo_russ/config.cpp

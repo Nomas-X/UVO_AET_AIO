@@ -1,6 +1,6 @@
 name = "Unit Voice-Overs AET AiO"
-prefix = "UVO_AET"
-mainprefix = "r"
+prefix = "uvo"
+mainprefix = "z"
 
 [properties]
 author = "Antistasi Event Team - Nomas / Redwan S."

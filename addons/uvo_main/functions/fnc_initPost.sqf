@@ -4,6 +4,7 @@ params ["_unit"];
 
 if (isNull _unit || !local _unit) exitWith {};
 if (getText (configOf _unit >> "simulation") == "UAVPilot") exitWith {};
+if ("InvisibleUniform_lxws" in typeOf _unit) exitWith {};
 
 
 // condition - Needs to return bool

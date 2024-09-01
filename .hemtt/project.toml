@@ -17,6 +17,7 @@ include = [
     "/img/*.paa",
     "logo_ca.paa",
     "logo_co.paa",
+	"/assets/*.paa",
     "*.bikey"
 ]
 exclude = [
@@ -52,20 +53,7 @@ parameters = [
     "-noPauseAudio",
 ]
 
-[hemtt.launch.Stratis]
+[hemtt.launch.Altis]
 extends = "default"
 dlc = ["ws","rf"]
-mission = "Stratis.Stratis"
-
-
-[hemtt.launch.GreenMag]
-extends = "Stratis"
-workshop = ["2352603233"]
-
-[hemtt.launch.exec]
-extends = "default"
-mission = "exec.VR"
-
-[hemtt.launch.airlift]
-extends = "default"
-mission = "airlift.VR"
+mission = "testMission.Altis"

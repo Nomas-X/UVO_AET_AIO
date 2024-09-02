@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=12;
+		nextID=27;
 	};
 	class Camera
 	{
-		pos[]={14840.362,20.46559,16399.221};
-		dir[]={0.5388028,-0.45556489,-0.70867407};
-		up[]={0.27573109,0.89020145,-0.36266366};
-		aside[]={-0.79607564,-3.7939753e-007,-0.60525173};
+		pos[]={14833.634,63.447311,16439.213};
+		dir[]={0.15668108,-0.67615139,-0.71995783};
+		up[]={0.14378253,0.73676717,-0.66069138};
+		aside[]={-0.97716212,1.9557774e-008,-0.21265446};
 	};
 };
 binarizationWanted=0;
@@ -23,13 +23,15 @@ sourceName="testmission";
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"Characters_f_lxWS",
+	"vehicles_1_F_lxWS_APC_Wheeled_02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=4;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -44,7 +46,25 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item2
+		{
+			className="Characters_f_lxWS";
+			name="Arma 3 Creator DLC: Western Sahara - Characters and Clothing";
+			author="Rotators Collective";
+			url="https://sahara.rotators.net/";
+		};
+		class Item3
+		{
+			className="Vehicles_F_lxWS";
+			name="Arma 3 Creator DLC: Western Sahara - Vehicles";
+			author="Rotators Collective";
+			url="https://sahara.rotators.net/";
+		};
 	};
+};
+dlcs[]=
+{
+	"ws"
 };
 randomSeed=1951784;
 class ScenarioData
@@ -75,7 +95,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2;
+		items=9;
 		class Item0
 		{
 			dataType="Group";
@@ -94,10 +114,41 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this allowDamage false;";
 						isPlayer=1;
 					};
 					id=10;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -170,6 +221,213 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14854.568,20.541695,16390.863};
+						angles[]={-0,0.27230552,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=16;
+					type="B_UN_crew_lxWS";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=16;
+						item1=13;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+				};
+			};
+			id=12;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14848.282,20.534163,16396.545};
+				angles[]={-0,0.27230552,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=13;
+			type="B_UNA_APC_Wheeled_02_hmg_lxWS";
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14837.575,17.921438,16393.605};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=18;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=17;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14840.068,17.921438,16396.254};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=20;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=19;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14840.826,17.921438,16396.539};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=22;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=21;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14839.627,17.921438,16396.76};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=24;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=23;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14837.816,17.921438,16396.602};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=26;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=25;
 		};
 	};
 };

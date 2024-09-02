@@ -22,13 +22,13 @@ jobs:
         - name: Move release to releases folder
           run:
             version="${{ github.event.release.tag_name }}"
-            mv .hemttout/release "@Unit Voice-Overs AET AiO-${{ env.VERSION }}"
+            mv .hemttout/release "@UVO_AET_AIO-${{ env.VERSION }}"
         - name: Zip release
-          run: zip -r "@Unit Voice-Overs AET AiO-${{ env.VERSION }}.zip" ./@Unit Voice-Overs AET AiO-${{ env.VERSION }}
+          run: zip -r "@UVO_AET_AIO-${{ env.VERSION }}.zip" ./@UVO_AET_AIO-${{ env.VERSION }}
         - name: Update Release with Files
           uses: softprops/action-gh-release@v1
           with:
-            files: ./@Unit Voice-Overs AET AiO-${{ env.VERSION }}.zip
+            files: ./@UVO_AET_AIO-${{ env.VERSION }}.zip
             draft: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
           uses: arma-actions/workshop-upload@v1
           with:
             itemId: '3173558956'
-            contentPath: './@Unit Voice-Overs AET AiO-${{ env.VERSION }}'
+            contentPath: './@UVO_AET_AIO-${{ env.VERSION }}'
             changelog: |
               https://github.com/Nomas-X/Unit-Voice-Overs-AET-AiO/releases/tag/v${{ env.VERSION }}
 

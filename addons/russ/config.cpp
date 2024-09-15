@@ -1,6 +1,6 @@
 class CfgPatches {
-	class uvo_russ {
-		name = "uvo_russ";
+	class uvo_aet_aio_russ {
+		name = "uvo_aet_aio_russ";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.9;
@@ -15,7 +15,7 @@ class CfgPatches {
 #include "voice_russ.hpp"
 
 class Extended_PreInit_EventHandlers {
-	class uvo_russ {
-		init = "[configFile >> 'UVO_voice_russ'] call UVO_fnc_register";
+	class uvo_aet_aio_russ {
+		init = "[configFile >> 'uvo_aet_aio_voice_russ'] call UVO_fnc_register";
 	};
 };

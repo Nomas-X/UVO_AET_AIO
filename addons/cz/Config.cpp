@@ -3,29 +3,20 @@
 #include "Nationality_CZ_Config.hpp"
 
 class CfgPatches {
-	class UVO_RHS_CZ {
-		name = "Unit Voiceovers RHS version : Czech voices";
+	class uvo_aet_aio_cz {
+		name = "uvo_aet_aio_cz";
 		version = "1";
 		author = "Domy L'Ours Brun";
 		url = "https://steamcommunity.com/id/DomyBear/";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.88;
-		requiredAddons[] = {
-			"cba_common",
-			"cba_events",
-			"cba_keybinding",
-			"cba_settings",
-			"cba_statemachine",
-			"cba_xeh",
-			"UAS",
-			"UVO"
-		};
+		requiredAddons[] = {"uvo_aet_aio_main"};
 	};
 };
 
 class Extended_PreInit_EventHandlers {
-    class UVO_CUSTOM_CZ {
-        init = "[configFile >> 'UVO_CZ_NationalityConfig'] call UVO_fnc_createNationalityFromConfig";
+    class uvo_aet_aio_cz {
+        init = "[configFile >> 'uvo_aet_aio_voice_cz'] call UVO_fnc_createNationalityFromConfig";
     };
 };

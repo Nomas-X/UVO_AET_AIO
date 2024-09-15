@@ -27,7 +27,7 @@ exclude = [
 ]
 
 [version]
-path = "addons/uvo_main/script_version.hpp" # Default
+path = "addons/main/script_version.hpp" # Default
 # major = 0 # Overrides path when set
 # minor = 1
 # patch = 1

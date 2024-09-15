@@ -1,5 +1,5 @@
 #define MAINPREFIX z
-#define PREFIX uvo
+#define PREFIX uvo_aet_aio
 
 #include "script_version.hpp"
 

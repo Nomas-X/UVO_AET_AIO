@@ -4,7 +4,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.9;
-		requiredAddons[] = {"uvo_main"};
+		requiredAddons[] = {"uvo_aet_aio_main"};
 		author = "Simplex Team";
 		url = "";
 		version = 1;

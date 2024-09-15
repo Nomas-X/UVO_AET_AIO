@@ -4,7 +4,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.9;
-		requiredAddons[] = {"uvo_main"};
+		requiredAddons[] = {"uvo_aet_aio_main"};
 		author = "Simplex Team";
 		url = "";
 		version = 1;
@@ -24,6 +24,6 @@ class Extended_PostInit_EventHandlers
 {
 	class uvo_aet_aio_amer
 	{
-		init = "call compileScript ['uvo_aet_aio_amer\throwables.sqf']";
+		init = "call compileScript ['\throwables.sqf']";
 	};
 };

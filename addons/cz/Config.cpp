@@ -10,7 +10,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.88;
-		requiredAddons[] = {"uvo_main"};
+		requiredAddons[] = {"uvo_aet_aio_main"};
 	};
 };
 

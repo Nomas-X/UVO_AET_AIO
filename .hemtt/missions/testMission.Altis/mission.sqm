@@ -235,15 +235,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14854.568,20.541695,16390.863};
-						angles[]={-0,0.27230552,0};
+						angles[]={0,0.27230552,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=16;
 					type="B_UN_crew_lxWS";
+					atlOffset=2.6141644;
 				};
 			};
 			class Attributes
@@ -272,6 +273,7 @@ class Mission
 				};
 			};
 			id=12;
+			atlOffset=-1.9073486e-006;
 		};
 		class Item3
 		{
@@ -279,7 +281,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14848.282,20.534163,16396.545};
-				angles[]={-0,0.27230552,0};
+				angles[]={0,0.27230552,0};
 			};
 			side="West";
 			flags=6;
@@ -288,6 +290,7 @@ class Mission
 			};
 			id=13;
 			type="B_UNA_APC_Wheeled_02_hmg_lxWS";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item4
 		{

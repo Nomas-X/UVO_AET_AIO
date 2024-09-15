@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 #include "CfgSounds.hpp"
 #include "Nationality_CZ_Config.hpp"
 

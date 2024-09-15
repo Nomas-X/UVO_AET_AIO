@@ -24,6 +24,6 @@ class Extended_PostInit_EventHandlers
 {
 	class uvo_aet_aio_amer
 	{
-		init = "call compileScript ['\uvo_aet_aio_amer\throwables.sqf']";
+		init = "call compileScript ['uvo_aet_aio_amer\throwables.sqf']";
 	};
 };

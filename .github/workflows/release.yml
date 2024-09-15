@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Set VERSION env
-          run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
+          run: echo VERSION=${GITHUB_REF#refs/tags/${{ env.VERSION }}} >> $GITHUB_ENV
         - name: Checkout the source code
           uses: actions/checkout@v2
         - name: Setup HEMTT

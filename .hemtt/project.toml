@@ -1,5 +1,5 @@
 name = "UVO_AET_AIO"
-prefix = "uvo"
+prefix = "uvo_aet_aio"
 mainprefix = "z"
 
 [properties]

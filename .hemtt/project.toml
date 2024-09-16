@@ -4,7 +4,7 @@ mainprefix = "z"
 
 [properties]
 author = "Antistasi Event Team - Nomas / Redwan S."
-url = "https://github.com/Nomas-X/Unit-Voice-Overs-AET-AiO"
+url = "https://github.com/Nomas-X/UVO_AET_AIO"
 
 [binarize]
 enabled = true # Default: true

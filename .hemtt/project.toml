@@ -1,10 +1,10 @@
 name = "UVO_AET_AIO"
-prefix = "uvo"
+prefix = "uvo_aet_aio"
 mainprefix = "z"
 
 [properties]
 author = "Antistasi Event Team - Nomas / Redwan S."
-url = "https://github.com/Nomas-X/Unit-Voice-Overs-AET-AiO"
+url = "https://github.com/Nomas-X/UVO_AET_AIO"
 
 [binarize]
 enabled = true # Default: true
@@ -27,7 +27,7 @@ exclude = [
 ]
 
 [version]
-path = "addons/uvo_main/script_version.hpp" # Default
+path = "addons/main/script_version.hpp" # Default
 # major = 0 # Overrides path when set
 # minor = 1
 # patch = 1
@@ -42,6 +42,7 @@ workshop = [
     "463939057",  # ACE3
     "2369477168", # Advanced Developer Tools
     "1779063631", # ZEN
+	"2981582086", # Simplex Tools and Extensions
 ]
 
 dlc = []

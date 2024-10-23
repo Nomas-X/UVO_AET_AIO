@@ -15,7 +15,7 @@
 		{GVAR(enablePlayers) || !isPlayer _x}
 	};
 
-	if (_enemies isEqualTo []) exitwith {};
+	if (_enemies isEqualTo []) exitWith {};
 
 	_enemies = _enemies apply {[_x distance _projectile, _x]};
 	_enemies sort true;

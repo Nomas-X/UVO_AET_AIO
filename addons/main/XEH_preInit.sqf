@@ -40,7 +40,7 @@ GVAR(aceMedical) = isClass (configFile >> "CfgPatches" >> "ace_medical");
 		"ace_explosives_muzzle",
 		"ace_explosives_muzzle",
 		typeOf _explosive,
-		getText (configfile >> "CfgAmmo" >> typeOf _explosive >> "ace_explosives_magazine"),
+		getText (configFile >> "CfgAmmo" >> typeOf _explosive >> "ace_explosives_magazine"),
 		_explosive,
 		objNull
 	] call FUNC(firedMan);

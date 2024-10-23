@@ -18,7 +18,7 @@ private _friendlies = ((_unit nearEntities [["CAManBase"],40]) select {
 
 if (_friendlies isEqualTo []) exitWith {};
 
-if (currentweapon _unit != secondaryweapon _unit) then {
+if (currentWeapon _unit != secondaryWeapon _unit) then {
 	if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
 	[_unit,"ammoLow"] call FUNC(speak);
 };

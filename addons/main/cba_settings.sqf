@@ -204,6 +204,17 @@
 	true
 ] call CBA_fnc_addSetting;
 
+[
+	"AET_UVO_DISABLE_VANILLA_SPEAKER",
+	"CHECKBOX",
+	"Disable Vanilla AI Speaker Voice",
+	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Initialization)],
+	true,
+	true,
+	{},
+	true
+] call CBA_fnc_addSetting;
+
 //---------------------------------------------//
 // Nationality Init
 

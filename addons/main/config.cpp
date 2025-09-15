@@ -17,7 +17,6 @@ class CfgPatches {
 			"cba_statemachine",
 			"cba_xeh"
 		};
-		VERSION_CONFIG;
 	};
 
 	// Dependency fix
@@ -28,7 +27,6 @@ class CfgPatches {
 		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = {"A3_data_f"};
 		author = "Simplex Team";
-		VERSION_CONFIG;
 	};
 };
 

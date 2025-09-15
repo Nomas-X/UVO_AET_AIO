@@ -35,7 +35,7 @@ jobs:
         - name: Update to Steam Workshop (stable)
           uses: arma-actions/workshop-upload@v1
           with:
-            itemId: '3331559799'
+            itemId: '3173558956'
             contentPath: './@UVO_AET_AIO-${{ env.VERSION }}'
             changelog: |
               https://github.com/Nomas-X/UVO_AET_AIO/releases/tag/v${{ env.VERSION }}

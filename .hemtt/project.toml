@@ -40,7 +40,7 @@ path = "addons/main/script_version.hpp" # Default
 workshop = [
     "450814997",  # CBA_A3's Workshop ID
     "463939057",  # ACE3
-    "2369477168", # Advanced Developer Tools
+    "3499977893", # Advanced Developer Tools
     "1779063631", # ZEN
 	"2981582086", # Simplex Tools and Extensions
 ]
@@ -49,9 +49,10 @@ dlc = []
 optionals = []
 
 parameters = [
-    "-window",
     "-noPause",
     "-noPauseAudio",
+	"-debug",
+	"-showScriptErrors",
 ]
 
 [hemtt.launch.Altis]
